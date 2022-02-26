@@ -15,10 +15,32 @@ export const ContainerSection = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 800px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    @media (max-width: 420px) {
+        justify-content: flex-end;
+        margin: 0 2rem;
+    }
+
+    @media (max-height: 700px) {
+        margin-bottom: 2rem;
+    }
 `;
 
 export const TitleProfile = styled.h1`
-    font-size: 3.5rem;
+    font-size: 3rem;
+
+    @media (max-width: 420px) {
+        font-size: 1.3rem;
+    }
+
+    @media (max-height: 700px) {
+        font-size: 1.2rem;
+    }
 `;
 
 export const DescriptionProfile = styled.span`
@@ -34,6 +56,11 @@ export const ContainerLeft = styled.div`
 `;
 
 export const ImageContainer = styled.div`
+    @media (max-height: 700px) {
+        img {
+            height: 210px !important;
+        }
+    }
 `;
 
 export const Divisor = styled.hr`
@@ -51,6 +78,20 @@ export const ContainerSectionTwo = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 800px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    @media (max-width: 420px) {
+        justify-content: flex-end;
+        margin: 3rem 2rem;
+    }
+
+    @media (max-height: 700px) {
+        margin-bottom: 2rem;
+    }
 `;
 
 export const Technologies = styled.div`
@@ -60,6 +101,12 @@ export const Technologies = styled.div`
 `;
 
 export const ImageDiv = styled.div`
+    @media (max-width: 420px) {
+        img {
+            width: 25px !important;
+            height: 25px !important;
+        }
+    }
 `;
 
 export const ContainerSectionThree = styled.div`
@@ -70,6 +117,20 @@ export const ContainerSectionThree = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 800px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    @media (max-width: 420px) {
+        justify-content: flex-end;
+        margin: 3rem 2rem;
+    }
+
+    @media (max-height: 700px) {
+        margin-bottom: 2rem;
+    }
 `;
 
 export const Social = styled.div`

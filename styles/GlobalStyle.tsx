@@ -24,14 +24,14 @@ export default createGlobalStyle`
     }
 
     body {
-        font: 400 1rem 'Roboto', sans-serif;
+        font: 400 1rem 'Poppins', sans-serif;
         background: ${props => props.theme.colors.gray_900};
     }
     
     *, button, input {
         border: 0;
         outline: 0;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
 
     button {

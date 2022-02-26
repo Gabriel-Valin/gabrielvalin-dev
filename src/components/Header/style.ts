@@ -50,6 +50,10 @@ export const HeaderNav = styled.nav`
             color: ${props => props.theme.colors.yellow_500};
         }
     }
+
+    @media (max-width: 600px) {
+        margin-top: 1.5rem;
+    }
 `;
 
 export const TitleIcon = styled.h3`
