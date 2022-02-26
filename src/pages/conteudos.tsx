@@ -3,6 +3,7 @@ import { Container, ContainerPost, ContainerSection, TitlePost, TitleData, Title
 import nodejs from '../../public/nodejs.jpeg'
 import docker from '../../public/docker.jpeg'
 import Link from "next/link";
+import Pagination from "../components/Pagination";
 
 function Contents() {
     return (
@@ -42,6 +43,7 @@ function Contents() {
                         </TitleIntroduction>
                     </ContainerPostBody>
                 </ContainerPost>
+                <Pagination />
             </ContainerSection>
         </Container>
         
