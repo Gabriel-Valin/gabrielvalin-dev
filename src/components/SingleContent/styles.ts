@@ -67,8 +67,14 @@ export const PostContent = styled.div`
     }
 
     img {
-        max-width: 720px !important:
-        max-height: 410px;
-        border-radius: 15px;
+            max-width: 90%;
+            border-radius: 15px;
+        }
+
+    @media (max-width: 420px) {
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
     }
 `;
