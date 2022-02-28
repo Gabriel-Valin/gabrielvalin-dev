@@ -29,7 +29,7 @@ function Pagination({ pageNumber, totalPage, setPosts }: PaginationTypeProps) {
         const client = await getPrismicClient()
         const posts = await client.getByType('blog-content', {
             fetch: ['blog-content.title', 'blog-content.content', 'blog-content.cover'],
-            pageSize: 1,
+            pageSize: 2,
             orderings: {
                 field: 'document.first_publication_date',
                 direction: 'desc',
